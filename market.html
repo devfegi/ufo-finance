@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>UFO Finance</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<div class="wrapper wrapper-market">
+		<header id="header" class="header">
+			<div class="header__content">
+				<a href="index.html" class="header__logo">
+					<img src="img/svg/logo.svg" alt="logo" />
+				</a>
+		
+				<div class="header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="menu__icon-bg"></div>
+					<nav class="menu__body menu__body--market">
+						<form action="#" class="menu__form" data-move="header__search,1,991">
+							<input type="text" class="menu__input" placeholder="Search by symbol or name" id="tags">
+							<a href="#error" type="submit" class="menu__search popup-link">
+								<img src="img/svg/search.svg" alt="icon">
+							</a>
+						</form>
+					</nav>
+				</div>
+		
+				<a href=" index.html" class="header__home">Home</a>
+		
+				<a href="#" class="header__wallet" data-move="menu__body,1,991">Connect Wallet</a>
+		
+				<div class="header__search">
+					<a href="#" class="header__btn header__btn--search" target="_blank">
+						<img src="img/svg/search.svg" alt="icon" class="menu__search-search">
+						<img src="img/svg/close.svg" alt="" class="menu__search-close">
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="box">
+				<div class="alien" data-aos="zoom-in" data-aos-duration="3000">
+					<div class="alien-img alien-img--box">
+						<img src="img/alien.png" alt="alien">
+					</div>
+				</div>
+				<div class="box__content" data-aos="fade-up" data-aos-duration="1000">
+					<div class="box__tabs tabs" data-move="menu__body,1,991">
+						<ul class="tabs__list">
+							<li class="tabs__item">
+								<button class="tabs__btn tabs__btn--active" data-tabs-path="buy">Buy</button>
+							</li>
+							<li class="tabs__item">
+								<button class="tabs__btn" data-tabs-path="sell">Sell</button>
+							</li>
+							<li class="tabs__item">
+								<button class="tabs__btn" data-tabs-path="settings">
+									<div class="tabs__settings">
+										<img src="img/svg/coolicon.svg" alt="icon" />
+									</div>
+								</button>
+							</li>
+						</ul>
+
+						<div class="tabs__wrap">
+							<div class="tabs__content tabs__content--active" data-tabs-target="buy">
+								<div class="tabs__form">
+									<div class="tabs__section">
+										<div class="tabs__form-title">You Pay</div>
+										<div class="tabs__form-group">
+											<input type="text" class="tabs__form-input" placeholder="0,00">
+											<select class="tabs__form-select">
+												<option value="0" selected="selected">ETH</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="tabs__section">
+										<div class="tabs__form-title">You Receive</div>
+										<div class="tabs__form-group">
+											<input type="text" class="tabs__form-input" placeholder="0,00">
+											<select class="tabs__form-select tabs__form-select--buy">
+												<option value="0" selected="selected">Choose token</option>
+												<option value="cqt">CQT</option>
+												<option value="ooe">OOE</option>
+												<option value="cere">CERE</option>
+												<option value="sdn">SDN</option>
+												<option value="deri">DERI</option>
+											</select>
+										</div>
+									</div>
+
+									<a href="#error" class="tabs__submit popup-link">Review Order</a>
+								</div>
+							</div>
+
+							<div class="tabs__content" data-tabs-target="sell">
+								<div class="tabs__form">
+									<div class="tabs__section">
+										<div class="tabs__form-title">You Pay</div>
+										<div class="tabs__form-group">
+											<select class="tabs__form-select tabs__form-select--w100">
+												<option value="0" selected="selected">ETH</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="tabs__section">
+										<div class="tabs__form-title">Your Collateral</div>
+										<div class="tabs__form-group">
+											<input type="text" class="tabs__form-input" placeholder="0,00">
+											<select class="tabs__form-select">
+												<option value="0" selected="selected">Choose token</option>
+												<option value="cqt">CQT</option>
+												<option value="ooe">OOE</option>
+												<option value="cere">CERE</option>
+												<option value="sdn">SDN</option>
+												<option value="deri">DERI</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="tabs__section">
+										<div class="tabs__form-title">You Receive</div>
+										<div class="tabs__form-group">
+											<input type="text" class="tabs__form-input" placeholder="0,00">
+											<select class="tabs__form-select tabs__form-select--sell">
+												<option value="0" selected="selected">Choose token</option>
+												<option value="cqt">CQT</option>
+												<option value="ooe">OOE</option>
+												<option value="cere">CERE</option>
+												<option value="sdn">SDN</option>
+												<option value="deri">DERI</option>
+											</select>
+										</div>
+									</div>
+
+									<a href="#error" class="tabs__submit popup-link">Review Order</a>
+								</div>
+							</div>
+
+							<div class="tabs__content" data-tabs-target="settings">
+								<div class="tabs__form">
+									<div class="tabs__section">
+										<div class="tabs__form-caption">
+											<div class="tabs__form-title">Max Slippage</div>
+											<div class="tabs__form-percent">
+												<span id="slider-range-value"></span>
+											</div>
+										</div>
+
+										<div class="tabs__form-slider" id="range-slider"></div>
+									</div>
+
+									<a href="#error" class="tabs__submit popup-link">Save</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="box__right">
+						<div class="box__top">
+							<div class="box__holder">
+								<div class="box__eth">Ethereum(ETH)</div>
+								<a href="#" class="box__link">Ethereum</a>
+							</div>
+							<div class="box__price">$9,536.2303</div>
+							<div class="box__text">+$953.6230 (+10.00%) | Last 24 hours</div>
+						</div>
+
+						<div class="box__graph" id="chart">
+							<!-- <img src="img/graph.png" alt="graph" /> -->
+						</div>
+
+						<div class="box__bottom">
+							<div class="box__utc">Expiration UTC 00:00 August, 29 2022</div>
+							<div class="box__dates">
+								<div class="box__date box__date--active">24H</div>
+								<div class="box__date">1W</div>
+								<div class="box__date">1M</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pairs">
+				<h2 class="pairs__title title" data-aos="fade-up" data-aos-duration="1000">Trading Pairs</h2>
+
+				<div class="pairs__items" data-aos="fade-up" data-aos-duration="2000">
+					<div class="pairs__item pairs__item--cqt">
+						<div class="pairs__icon">
+							<img src="img/svg/pairs-1.svg" alt="logo" />
+						</div>
+						<div class="pairs__name">CQT</div>
+					</div>
+					<div class="pairs__item pairs__item--ooe">
+						<div class="pairs__icon">
+							<img src="img/svg/pairs-2.svg" alt="logo" />
+						</div>
+						<div class="pairs__name">OOE</div>
+					</div>
+					<div class="pairs__item pairs__item--cere">
+						<div class="pairs__icon">
+							<img src="img/svg/pairs-3.svg" alt="logo" />
+						</div>
+						<div class="pairs__name">CERE</div>
+					</div>
+					<div class="pairs__item pairs__item--sdn">
+						<div class="pairs__icon">
+							<img src="img/svg/pairs-4.svg" alt="logo" />
+						</div>
+						<div class="pairs__name">SDN</div>
+					</div>
+					<div class="pairs__item pairs__item--deri">
+						<div class="pairs__icon">
+							<img src="img/svg/pairs-5.svg" alt="logo" />
+						</div>
+						<div class="pairs__name">DERI</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="hiring hiring-market">
+				<div class="hiring__content" data-aos="fade-up" data-aos-duration="1000">
+					<div class="hiring__logo">
+						<img src="img/svg/logo-2.svg" alt="logo" />
+					</div>
+					<div class="hiring__title">we are hiring</div>
+					<a href="#" class="hiring__btn" target="_blank">Form</a>
+				</div>
+			</section>
+
+			<section class="about" data-aos="fade-up" data-aos-duration="1000">
+				<h2 class="about__title title">About Ethereum</h2>
+				<div class="about__desc"><span>Ethereum</span> is a smart contract
+					platform that enables developers to freely
+					build decentralized applications. Ether (ETH) is Ethereum’s native token that is used to pay transaction fees
+					to miners. In specific situations, for ETH to be exchanged with other Ethereum-based tokens, it needs to be
+					wrapped into <span>WETH</span>. Wrapping ETH does not affect its value, 1 ETH = 1 WETH.</div>
+
+				<div class="about__items">
+					<div class="about__item">
+						<div class="about__box">12H:34M:56S</div>
+						<div class="about__text">Collaterals Expiration time</div>
+					</div>
+					<div class="about__item">
+						<div class="about__box">$2,415.9421 ETH</div>
+						<div class="about__text">TVL</div>
+					</div>
+					<div class="about__item">
+						<div class="about__box">Ethereum (Chain 1)</div>
+						<div class="about__text">Network</div>
+					</div>
+				</div>
+
+				<div class="socials">
+					<a href="#" class="socials__link">
+						<img src="img/svg/social-1.svg" alt="icon">
+					</a>
+					<a href="#" class="socials__link">
+						<img src="img/svg/social-2.svg" alt="icon">
+					</a>
+					<a href="#" class="socials__link">
+						<img src="img/svg/social-3.svg" alt="icon">
+					</a>
+					<a href="#" class="socials__link">
+						<img src="img/svg/social-4.svg" alt="icon">
+					</a>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<div id="up-js" class="up">
+		<div class="up__item">
+			<img src="img/svg/up.svg" alt="icon" />
+		</div>
+	</div>
+
+
+	<div id="error" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<button class="popup__close close-popup">
+					<img src="img/svg/close.svg" alt="icon" />
+				</button>
+				<div class="popup__wrap">
+					<div class="popup__icon">
+						<img src="img/svg/lock.svg" alt="icon" />
+					</div>
+					<div class="popup__subtitle">Contract is under development.</div>
+					<div class="popup__text">
+						Follow us on <a href="#" target="_blank">Telegram</a> and <a href="#" target="_blank">Twitter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
